@@ -1,0 +1,22 @@
+{
+  "name": "webpg-docs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:web-playground/docs.git",
+  "author": "lif3ng <lif3ng@icloud.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "husky": "=4",
+    "lint-staged": ">=10",
+    "prettier": "2.2.1",
+    "vuepress": "^1.8.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,css,md}": "prettier --write"
+  }
+}
